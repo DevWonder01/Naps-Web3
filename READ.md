@@ -16,5 +16,5 @@ npx hardhat compile
 Run a local Etheruem(Hardhat) Node
 npx hardhat node
 
-Test The Scripts
-npx hardhard test
+Deploy a Conract (Token.sol)
+npx hardhat run --network localhost scripts/token/deploy.ts
