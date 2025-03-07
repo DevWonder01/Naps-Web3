@@ -2,7 +2,7 @@ git pull
 
 open terminal CNTL + J
 
-cd LearnSoldiity
+cd LearnSolidity
 
 Install Hardhat -> USING -> npm i hardhat -global
 https://www.npmjs.com/package/hardhat
@@ -12,3 +12,9 @@ npm install --force
 
 Compile The Enviroment
 npx hardhat compile 
+
+Run a local Etheruem(Hardhat) Node
+npx hardhat node
+
+Test The Scripts
+npx hardhard test
