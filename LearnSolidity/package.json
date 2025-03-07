@@ -22,8 +22,6 @@
   },
   "homepage": "https://github.com/traderjoe-xyz/joe-core#readme",
   "keywords": [
-    "traderjoe-xyz",
-    "avalanche"
   ],
   "scripts": {
     "build": "hardhat compile",
