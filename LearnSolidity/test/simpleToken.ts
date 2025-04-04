@@ -3,7 +3,7 @@ const { ethers } = require("hardhat");
 
 describe("SimpleToken", function () {
   let SimpleToken, simpleToken, owner, addr1, addr2;
-  const initialSupply = ethers.parseUnits("1000", 18);
+  const initialSupply = ethers.utils.parseUnits("1000", 18);
 
   beforeEach(async function () {
     [owner, addr1, addr2] = await ethers.getSigners();

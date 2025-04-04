@@ -4,8 +4,8 @@ const { ethers } = require("hardhat");
 describe("SimpleAuction", function () {
   let SimpleAuction, simpleAuction, beneficiary, bidder1, bidder2;
   const biddingTime = 60; // seconds
-  const initialBid = ethers.parseEther("1");
-  const higherBid = ethers.parseEther("2");
+  const initialBid = "1";
+  const higherBid = "2";
 
   beforeEach(async function () {
     [beneficiary, bidder1, bidder2] = await ethers.getSigners();
