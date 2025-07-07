@@ -13,29 +13,27 @@
     "type": "function"
   },
   {
-    "inputs": [],
-    "name": "career",
-    "outputs": [
+    "inputs": [
       {
-        "internalType": "string",
-        "name": "",
-        "type": "string"
+        "internalType": "int256",
+        "name": "a",
+        "type": "int256"
+      },
+      {
+        "internalType": "int256",
+        "name": "b",
+        "type": "int256"
       }
     ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "name",
+    "name": "sumOf2Numbers",
     "outputs": [
       {
-        "internalType": "string",
+        "internalType": "int256",
         "name": "",
-        "type": "string"
+        "type": "int256"
       }
     ],
-    "stateMutability": "view",
+    "stateMutability": "pure",
     "type": "function"
   }
 ]

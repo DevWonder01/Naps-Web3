@@ -3,13 +3,13 @@ const { ethers } = require("hardhat");
 
 describe("SimpleToken", function () {
   let SimpleToken, simpleToken, owner, addr1, addr2;
-  const initialSupply = ethers.utils.parseUnits("1000", 18);
+  const initialSupply = 1000000000000000000000000n;
 
   beforeEach(async function () {
     [owner, addr1, addr2] = await ethers.getSigners();
     SimpleToken = await ethers.getContractFactory("SimpleToken");
     simpleToken = await SimpleToken.deploy(initialSupply);
-    await simpleToken.waitForDeployment();
+   
   });
 
   it("Should have the correct total supply", async function () {
@@ -21,7 +21,7 @@ describe("SimpleToken", function () {
   });
 
   it("Should transfer tokens correctly", async function () {
-    const transferAmount = ethers.parseUnits("100", 18);
+    const transferAmount = 1000000000000000000n
 
     await simpleToken.transfer(addr1.address, transferAmount);
     expect(await simpleToken.balanceOf(owner.address)).to.equal(initialSupply - transferAmount);
@@ -33,7 +33,7 @@ describe("SimpleToken", function () {
   });
 
   it("Should emit a Transfer event on transfer", async function () {
-    const transferAmount = ethers.parseUnits("50", 18);
+    const transferAmount = ethers.utils.parseUnits("50", 18);
 
     await expect(simpleToken.transfer(addr1.address, transferAmount))
       .to.emit(simpleToken, "Transfer")
@@ -41,7 +41,7 @@ describe("SimpleToken", function () {
   });
 
   it("Should fail if sender doesn't have enough tokens", async function () {
-    const transferAmount = ethers.parseUnits("1001", 18);
+    const transferAmount = ethers.utils.parseUnits("1001", 18);
     await expect(simpleToken.transfer(addr1.address, transferAmount)).to.be.revertedWith("Insufficient balance.");
   });
 });

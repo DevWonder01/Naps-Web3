@@ -5,7 +5,6 @@ describe("SimpleStorage", function () {
   it("Should initialize with a default value of 0", async function () {
     const SimpleStorage = await ethers.getContractFactory("SimpleStorage");
     const simpleStorage = await SimpleStorage.deploy();
-    await simpleStorage.waitForDeployment();
 
     expect(await simpleStorage.get()).to.equal(0);
   });
@@ -13,7 +12,6 @@ describe("SimpleStorage", function () {
   it("Should set and get the stored data", async function () {
     const SimpleStorage = await ethers.getContractFactory("SimpleStorage");
     const simpleStorage = await SimpleStorage.deploy();
-    await simpleStorage.waitForDeployment();
 
     const newValue = 42;
     await simpleStorage.set(newValue);
