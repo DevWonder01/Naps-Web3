@@ -109,3 +109,28 @@ contract CustomArray {
 
  
 }
+
+
+contract Structs {
+    struct Book {
+        string title;
+        string author;
+        uint256 book_id;
+    }
+
+    // Access starts here 👇👇👇
+    // structname and struct variable name
+    Book myBook;
+
+    function setBook(
+        string memory _title,
+        string memory _author,
+        uint256 _id
+    ) public {
+        myBook = Book(_title, _author, _id);
+    }
+
+    function getBookId() public view returns (uint256) {
+        return myBook.book_id;
+    }
+}
