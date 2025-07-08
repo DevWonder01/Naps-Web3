@@ -74,36 +74,38 @@ contract ContractTwo {
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
+c// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
 contract CustomArray {
-    uint256[] public lucky_array = new uint256[](7);
+    uint256[] public array = new uint256[](7);
 
-
-    constructor() {
-
+    function get_array_length() public view returns (uint256) {
+        return array.length;
     }
 
     function update_array() public {
-        lucky_array[0] = 1;
-        lucky_array[1] = 2;
-        lucky_array[2] = 3;
-        lucky_array[3] = 3;
-        lucky_array[4] = 3;
-        lucky_array[5] = 3;
-        lucky_array[6] = 3;
+        array[1] = 1;
+        array[1] = 2;
+        array[2] = 3;
+        array[3] = 4;
+        array[4] = 5;
+        array[5] = 6;
+        array[6] = 7;
     }
 
-    function get_element(uint val) public view returns (uint256){
-        require(val < lucky_array.length, "Index out of bounds");
-        return lucky_array[val];
+
+    function get_element(uint256 val) public view returns (uint256) {
+        require(val < array.length, "Index out of bounds");
+
+        return array[val];
     }
 
-    function set_element(uint index, uint val) public returns (uint256){
-        require(index < lucky_array.length, "Index out of bounds");
-        lucky_array[index] = val;
-        return lucky_array[index];
+    function set_element(uint256 index, uint256 val) public returns (uint256) {
+        require(index < array.length, "Index out of bounds");
+        array[index] = val;
+        return array[index];
     }
 
-    function get_array_length() public view returns (uint256) {
-        return lucky_array.length;
-    }
+ 
 }
