@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web3 Course: The Internet's Next Evolution</title>
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font for better aesthetics */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light blue-gray background */
+            color: #1a202c; /* Dark text for readability */
+        }
+        /* Smooth scroll for navigation */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Styling for the content cards */
+        .content-card {
+            background-color: #ffffff;
+            border-radius: 1rem; /* Rounded corners */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            transition: transform 0.2s ease-in-out;
+        }
+        .content-card:hover {
+            transform: translateY(-5px); /* Slight lift on hover */
+        }
+        /* Specific styling for module titles */
+        .module-title {
+            background-color: #4a5568; /* Darker gray for module headers */
+            color: #ffffff;
+            padding: 1rem 1.5rem;
+            border-radius: 1rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            font-size: 1.75rem; /* text-3xl */
+            font-weight: 700; /* font-bold */
+        }
+        /* Styling for navigation links */
+        .nav-link {
+            padding: 0.75rem 1rem;
+            border-radius: 0.75rem;
+            margin-bottom: 0.5rem;
+            display: block;
+            text-align: left;
+            font-weight: 500;
+            color: #4a5568;
+            transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+        }
+        .nav-link:hover {
+            background-color: #e2e8f0;
+            color: #2d3748;
+        }
+        .nav-link.active {
+            background-color: #3182ce; /* Blue for active link */
+            color: #ffffff;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="flex flex-col md:flex-row min-h-screen">
+
+    <!-- Navigation Sidebar -->
+    <nav class="w-full md:w-64 bg-gray-800 text-white p-6 md:p-4 shadow-lg md:sticky md:top-0 md:h-screen overflow-y-auto">
+        <div class="text-2xl font-bold mb-6 text-center text-blue-300">Web3 Course</div>
+        <ul id="nav-list">
+            <li><a href="#module1" class="nav-link">Module 1: Intro & Blockchain</a></li>
+            <li><a href="#module2" class="nav-link">Module 2: Ethereum & Smart Contracts</a></li>
+            <li><a href="#module3" class="nav-link">Module 3: dApps & Core Concepts</a></li>
+            <li><a href="#module4" class="nav-link">Module 4: Web3 in Nigeria</a></li>
+            <li><a href="#module5" class="nav-link">Module 5: Future & Next Steps</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="flex-1 p-6 md:p-10">
+        <header class="text-center mb-10">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-4">Web3: The Internet's Next Evolution</h1>
+            <p class="text-xl md:text-2xl text-gray-700">Your Gateway to Decentralized Innovation</p>
+            <p class="text-md text-gray-600 mt-2">Presented by National Association of Physics Student (UNILAG) and Mavis Community</p>
+        </header>
+
+        <!-- Module 1: Introduction to Web3 & Blockchain Fundamentals -->
+        <section id="module1" class="mb-12">
+            <h2 class="module-title">Module 1: Introduction to Web3 & Blockchain Fundamentals</h2>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 2: What is Web3?</h3>
+                <p class="text-gray-800 mb-2"><strong>Keywords:</strong> Decentralized, User-Owned, Trustless, Open.</p>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Evolution: Web1 (Read-Only) → Web2 (Read-Write) → Web3 (Read-Write-Own)</li>
+                    <li>Powered by Blockchain Technology</li>
+                </ul>
+                <p class="text-gray-700 mt-4">
+                    Web3 represents the next generation of the internet, moving beyond the static pages of Web1 and the interactive but centralized platforms of Web2. In Web3, the internet is decentralized, meaning no single entity controls it. Users have ownership over their data and digital assets, fostering a more trustless and open environment. This new era is fundamentally powered by blockchain technology.
+                </p>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 3: Why Web3 Matters</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">Why We Need Web3</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li><strong>Control:</strong> Own your data, not platforms.</li>
+                    <li><strong>Transparency:</strong> Open and verifiable systems.</li>
+                    <li><strong>Censorship Resistance:</strong> No single point of control.</li>
+                    <li><strong>Innovation:</strong> New possibilities for applications.</li>
+                </ul>
+                <p class="text-gray-700 mt-4">
+                    Web3 addresses many limitations of the current internet. It gives users true control over their digital identities and data, moving away from a model where large corporations own and monetize user information. The underlying blockchain technology ensures transparency and verifiability of transactions and data. Furthermore, its decentralized nature makes it resistant to censorship, and its open, programmable foundation sparks unprecedented innovation across various sectors.
+                </p>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 4: Introducing Blockchain</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">Blockchain: The Foundation of Web3</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>A Distributed Ledger Technology (DLT)</li>
+                    <li>Network of computers (nodes) share and verify data.</li>
+                    <li>Data is stored in "blocks" linked securely.</li>
+                </ul>
+                <p class="text-gray-700 mt-4">
+                    At the heart of Web3 is blockchain, a revolutionary Distributed Ledger Technology (DLT). Imagine a digital record book that isn't stored in one place, but rather copied and shared across a vast network of computers, called "nodes." Each new piece of information (like a transaction) is grouped into a "block," and these blocks are then cryptographically linked together in a secure, chronological "chain." This distributed and linked structure makes the data incredibly secure and resistant to tampering.
+                </p>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 5: How Blockchain Works (Simplified)</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">Blockchain in Action: Blocks & Chains</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Transactions are grouped into "blocks."</li>
+                    <li>Each block is cryptographically linked to the previous.</li>
+                    <li>Creates an immutable, tamper-proof record.</li>
+                </ul>
+                <p class="text-gray-700 mt-4">
+                    Think of a blockchain as a digital history book that's constantly being updated. When new transactions occur, they are bundled together into a new "block." Before this block can be added to the chain, it must be verified by the network's participants. Once verified, it's given a unique digital fingerprint (a "hash") and linked to the previous block using its hash. This creates an unbroken, tamper-proof chain of records, where every participant has an identical copy, ensuring integrity and transparency.
+                </p>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 6: Decentralization Defined</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">Decentralization: The Core Principle</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>No central authority controls the network.</li>
+                    <li>Information is distributed across many participants.</li>
+                    <li>Increases security and resilience.</li>
+                </ul>
+                <p class="text-gray-700 mt-4">
+                    Decentralization is the fundamental concept that sets Web3 apart. Unlike traditional systems where a single company or government controls data and operations, a decentralized network has no single point of control. Information is spread across numerous participants (nodes) globally. This distribution makes the system incredibly resilient to attacks or failures, as there's no central server to target. It also fosters trust because no single entity can unilaterally change the rules or censor information.
+                </p>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 7: Consensus Mechanisms (Brief Intro)</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">Agreeing on Truth: Consensus</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>How network participants agree on new transactions.</li>
+                    <li><strong>Proof of Work (PoW):</strong> (e.g., Bitcoin) - "Mining"</li>
+                    <li><strong>Proof of Stake (PoS):</strong> (e.g., Ethereum 2.0) - "Staking"</li>
+                </ul>
+                <p class="text-gray-700 mt-4">
+                    In a decentralized network, how do all the participants agree on which new blocks are valid and should be added to the chain? This is where "consensus mechanisms" come in. Two common examples are Proof of Work (PoW), used by Bitcoin, where computers "mine" new blocks by solving complex puzzles, and Proof of Stake (PoS), used by newer versions of Ethereum, where participants "stake" their cryptocurrency to validate transactions and create new blocks. These mechanisms ensure the integrity and security of the blockchain.
+                </p>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 8: Cryptography & Security</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">Secure by Design: Cryptography</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Public & Private Keys: Digital identity.</li>
+                    <li>Hashing: Unique digital fingerprint for data.</li>
+                    <li>Ensures integrity and authenticity.</li>
+                </ul>
+                <p class="text-gray-700 mt-4">
+                    Cryptography is the mathematical backbone that secures blockchain and Web3. It involves techniques like "hashing," which creates a unique, fixed-size digital fingerprint for any piece of data. If even a single character changes in the data, the hash changes completely, ensuring data integrity. Cryptography also enables "public and private keys" – your digital identity on the blockchain. Your public key is like your address, visible to all, while your private key is your secret password, essential for authorizing transactions and proving ownership.
+                </p>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 9: Recap: Blockchain Fundamentals</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">Key Takeaways: Blockchain</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Decentralization, Immutability, Transparency, Cryptography, Consensus.</li>
+                    <li><strong>Question for Audience:</strong> "What's one new thing you learned about blockchain?"</li>
+                </ul>
+                <p class="text-gray-700 mt-4">
+                    To summarize Module 1, remember these core concepts: Decentralization (no central control), Immutability (records cannot be changed), Transparency (all transactions are public), Cryptography (secures data and identities), and Consensus (how the network agrees). These principles collectively create a powerful and secure foundation for Web3.
+                </p>
+            </div>
+        </section>
+
+        <!-- Module 2: The Ethereum Ecosystem & Smart Contracts -->
+        <section id="module2" class="mb-12">
+            <h2 class="module-title">Module 2: The Ethereum Ecosystem & Smart Contracts</h2>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 11: Why Ethereum?</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">Beyond Bitcoin: The Rise of Ethereum</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Bitcoin: Digital gold, store of value.</li>
+                    <li>Ethereum: Programmable blockchain.</li>
+                    <li>Enables "Smart Contracts."</li>
+                </ul>
+                <p class="text-gray-700 mt-4">
+                    While Bitcoin introduced the world to decentralized digital money, Ethereum took the concept of blockchain a step further. It's not just a cryptocurrency; it's a "programmable blockchain." This means developers can build and deploy applications directly on its network. The key innovation that enables this is "Smart Contracts," which we'll explore next. Ethereum's flexibility has made it the leading platform for Web3 development.
+                </p>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 12: What are Smart Contracts?</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">Smart Contracts: Code that Self-Executes</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Agreements written in code, stored on blockchain.</li>
+                    <li>Automatically execute when conditions are met.</li>
+                    <li>No intermediaries needed; trustless.</li>
+                </ul>
+                <p class="text-gray-700 mt-4">
+                    Imagine a contract that enforces itself. That's a smart contract. These are pieces of code stored and executed on a blockchain like Ethereum. Once deployed, they run exactly as programmed, without any possibility of downtime, censorship, fraud, or third-party interference. For example, a smart contract could automatically release funds to a seller once a buyer confirms receipt of goods, all without a bank or lawyer. This automation makes transactions trustless and highly efficient.
+                </p>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 13: Smart Contract Use Cases</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">Smart Contracts: Real-World Applications</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Automated Escrow</li>
+                    <li>Supply Chain Tracking</li>
+                    <li>Digital Voting Systems</li>
+                    <li>Decentralized Finance (DeFi)</li>
+                </ul>
+                <p class="text-gray-700 mt-4">
+                    Smart contracts have a vast array of applications. They can facilitate automated escrow services, ensuring funds are held securely until conditions are met. In supply chains, they can track goods from origin to destination, automatically releasing payments upon delivery. They can power secure and transparent digital voting systems. Most notably, they are the backbone of Decentralized Finance (DeFi), enabling peer-to-peer lending, borrowing, and trading without traditional banks.
+                </p>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 14: The Ethereum Virtual Machine (EVM)</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">EVM: Ethereum's Engine</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>A decentralized computer that runs smart contracts.</li>
+                    <li>Ensures contracts run identically for everyone.</li>
+                    <li>Every node on the network runs an EVM.</li>
+                </ul>
+                <p class="text-gray-700 mt-4">
+                    The Ethereum Virtual Machine (EVM) is essentially the global, decentralized computer that executes smart contracts on the Ethereum blockchain. Every computer (node) participating in the Ethereum network runs its own EVM. When a smart contract is executed, every EVM on every node processes the same instructions, ensuring that the outcome is consistent and verifiable across the entire network. This consistency is vital for the trust and reliability of decentralized applications.
+                </p>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 15: Gas & Transactions on Ethereum</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">Gas: Fueling Ethereum Transactions</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>"Gas" is the fee for computation/storage on Ethereum.</li>
+                    <li>Paid in Ether (ETH), Ethereum's native cryptocurrency.</li>
+                    <li>Ensures network security and prevents spam.</li>
+                </ul>
+                <p class="text-gray-700 mt-4">
+                    Every operation on the Ethereum blockchain, from sending cryptocurrency to executing a complex smart contract, requires a small computational effort. This effort is measured in "gas." Gas acts as a fee, paid in Ether (ETH), Ethereum's native cryptocurrency, to the network validators who process your transactions. This system prevents malicious actors from spamming the network with endless transactions and incentivizes validators to secure the network. The more complex the operation, the more gas it consumes.
+                </p>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 16: Your Ethereum Wallet</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">Your Gateway to Web3: Crypto Wallets</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Software or hardware to store your crypto assets.</li>
+                    <li><strong>Public Key:</strong> Your address (like an email).</li>
+                    <li><strong>Private Key:</strong> Your secret (like a password).</li>
+                    <li><strong>Seed Phrase:</strong> Backup to recover your wallet.</li>
+                </ul>
+                <p class="text-red-600 font-bold mt-2">Warning: NEVER share your private key/seed phrase!</p>
+                <p class="text-gray-700 mt-4">
+                    A crypto wallet is your essential tool for interacting with Web3. It's not where your actual cryptocurrency is "stored" (that's on the blockchain), but rather a tool that holds your "keys" – your public and private keys. Your public key is your unique address on the blockchain, which you can share to receive funds. Your private key is a secret, cryptographic code that proves ownership and allows you to sign transactions. Most wallets also provide a "seed phrase" (a list of 12-24 words) which is your ultimate backup. Losing your private key or seed phrase means losing access to your assets forever.
+                </p>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 17: Recap & Q&A - Module 2</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">Key Takeaways: Module 2</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Ethereum as a platform, Smart Contract power, Wallet basics.</li>
+                </ul>
+                <p class="text-gray-700 mt-4">
+                    Module 2 highlighted Ethereum's role as a programmable blockchain, the transformative power of smart contracts in automating agreements, and the crucial function of your crypto wallet as your identity and access point to the Web3 world. Understanding these elements is key to navigating decentralized applications.
+                </p>
+            </div>
+        </section>
+
+        <!-- Module 3: Decentralized Applications (dApps) & Core Concepts -->
+        <section id="module3" class="mb-12">
+            <h2 class="module-title">Module 3: Decentralized Applications (dApps) & Core Concepts</h2>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 19: What are dApps?</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">dApps: Decentralized Apps</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Applications built on blockchain technology (e.g., Ethereum).</li>
+                    <li>Backend (smart contracts) runs on a decentralized network.</li>
+                    <li>No single entity controls the application.</li>
+                </ul>
+                <p class="text-gray-700 mt-4">
+                    Decentralized applications, or dApps, are the user-facing interfaces of Web3. Unlike traditional apps whose backend servers are controlled by a single company, dApps have their core logic (smart contracts) deployed and run on a decentralized blockchain network. This means no single company can shut them down, censor them, or change their rules without network consensus. They are open-source and operate transparently, giving users more control and trust.
+                </p>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 20: Decentralized Autonomous Organizations (DAOs)</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">DAOs: Community-Governed Organizations</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Organizations run by code and community vote.</li>
+                    <li>No central CEO or board.</li>
+                    <li>Decisions made collectively by token holders.</li>
+                </ul>
+                <p class="text-gray-700 mt-4">
+                    DAOs are a revolutionary way to organize and govern. They are organizations whose rules are encoded as a transparent computer program, controlled by the organization's members rather than a central authority. Decisions are made collectively through voting mechanisms, often based on the number of governance tokens a member holds. This allows for truly democratic and transparent management, from funding projects to making strategic decisions, all without the need for traditional corporate structures.
+                </p>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 21: Non-Fungible Tokens (NFTs)</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">NFTs: Unique Digital Ownership</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Unique digital assets (art, music, collectibles).</li>
+                    <li>Ownership recorded on a blockchain.</li>
+                    <li>Not interchangeable (unlike cryptocurrency).</li>
+                </ul>
+                <p class="text-gray-700 mt-4">
+                    NFTs, or Non-Fungible Tokens, represent unique digital assets whose ownership is securely recorded on a blockchain. Unlike cryptocurrencies (which are "fungible" – one Bitcoin is interchangeable with another), each NFT is distinct and cannot be replaced by another. They can represent anything digital: art, music, videos, virtual land, collectibles, or even tweets. NFTs provide verifiable proof of ownership and authenticity in the digital realm, enabling new forms of digital commerce and creative expression.
+                </p>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 22: Decentralized Finance (DeFi)</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">DeFi: Open & Accessible Finance</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Financial services built on blockchain (lending, borrowing, trading).</li>
+                    <li>No banks or traditional institutions needed.</li>
+                    <li>Permissionless and transparent.</li>
+                </ul>
+                <p class="text-gray-700 mt-4">
+                    DeFi, or Decentralized Finance, is an umbrella term for financial services built on blockchain technology, primarily Ethereum. These services operate without traditional financial intermediaries like banks, brokers, or exchanges. Users can lend, borrow, trade, earn interest, and more, directly through smart contracts. DeFi aims to create a more open, transparent, and accessible financial system, available to anyone with an internet connection, regardless of their location or credit history.
+                </p>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 23: Interacting with the Web3 Ecosystem</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">Navigating the Decentralized Web</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Using your crypto wallet (e.g., MetaMask) to connect.</li>
+                    <li>Approving transactions and signing messages.</li>
+                    <li>Exploring dApp interfaces.</li>
+                </ul>
+                <p class="text-gray-700 mt-4">
+                    To interact with dApps and the broader Web3 ecosystem, your crypto wallet is key. Wallets like MetaMask act as a bridge between your web browser and the blockchain. When you visit a dApp, you'll typically be prompted to "Connect Wallet." Once connected, you can approve transactions (like sending cryptocurrency or interacting with a smart contract) and sign messages to prove your identity, all secured by your private key. This seamless integration makes Web3 accessible to users.
+                </p>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 24: Recap & Q&A - Module 3</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">Key Takeaways: Module 3</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>dApps, DAOs, NFTs, DeFi, Wallet interaction.</li>
+                </ul>
+                <p class="text-gray-700 mt-4">
+                    Module 3 introduced you to the core applications and concepts within Web3: dApps as decentralized software, DAOs for community-driven governance, NFTs for unique digital ownership, and DeFi for open financial services. You also learned how your crypto wallet is the essential tool for navigating this new digital landscape.
+                </p>
+            </div>
+        </section>
+
+        <!-- Module 4: Web3 in Nigeria: Opportunities & Challenges -->
+        <section id="module4" class="mb-12">
+            <h2 class="module-title">Module 4: Web3 in Nigeria: Opportunities & Challenges</h2>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 26: Nigeria's Web3 Leadership</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">A Global Leader in Web3 Adoption</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>High crypto adoption rates (e.g., Chainalysis rankings).</li>
+                    <li>Young, tech-savvy population.</li>
+                    <li>Driving innovation in the African Web3 space.</li>
+                    <li><strong>Data Point (if available):</strong> "Nigeria ranks X globally in crypto adoption."</li>
+                </ul>
+                <p class="text-gray-700 mt-4">
+                    Nigeria has emerged as a significant player in the global Web3 space, consistently ranking among the top countries for cryptocurrency adoption according to reports like Chainalysis. This leadership is driven by a large, young, and highly tech-savvy population eager to embrace new digital opportunities. Nigeria's vibrant ecosystem is not just adopting Web3, but actively contributing to its innovation and growth across the African continent.
+                </p>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 27: Opportunities for Nigerians in Web3</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">Unlocking Potential: Opportunities</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li><strong>Remittances:</strong> Faster, cheaper cross-border payments.</li>
+                    <li><strong>Financial Inclusion:</strong> Access to services for the unbanked.</li>
+                    <li><strong>Job Creation:</strong> Developer roles, community managers, content creators.</li>
+                    <li><strong>Entrepreneurship:</strong> Building local dApps, Web3 startups.</li>
+                    <li><strong>Digital Ownership:</strong> Monetizing content, gaming assets.</li>
+                </ul>
+                <p class="text-gray-700 mt-4">
+                    For Nigerians, Web3 presents numerous opportunities. It can significantly improve cross-border remittances, making them faster and cheaper. It offers a pathway to financial inclusion for the unbanked and underbanked, providing access to lending, saving, and trading services. The growing Web3 industry is creating new job roles for developers, community managers, and content creators. Furthermore, it empowers local entrepreneurs to build innovative dApps and startups, and enables individuals to monetize their digital content and in-game assets through NFTs.
+                </p>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 28: Challenges & Considerations in Nigeria</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">Navigating the Landscape: Challenges</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li><strong>Regulatory Uncertainty:</strong> Evolving government stance.</li>
+                    <li><strong>Digital Literacy:</strong> Bridging the knowledge gap.</li>
+                    <li><strong>Infrastructure:</strong> Internet access, power stability.</li>
+                    <li><strong>Scams & Misinformation:</strong> Protecting users.</li>
+                    <li><strong>Funding for Startups:</strong> Access to capital.</li>
+                </ul>
+                <p class="text-gray-700 mt-4">
+                    Despite its potential, Web3 adoption in Nigeria faces challenges. Regulatory uncertainty from the government can create an unpredictable environment for businesses and users. There's a significant need to improve digital literacy, especially in rural areas, to ensure broader understanding and safe participation. Infrastructure limitations, such as inconsistent internet access and power supply, can hinder widespread adoption. The prevalence of scams and misinformation also poses a risk, making user protection crucial. Finally, local Web3 startups often face hurdles in accessing sufficient funding to scale their innovations.
+                </p>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 29: Addressing Challenges & Moving Forward</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">Towards a Robust Web3 Ecosystem</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li><strong>Education:</strong> Your role in building knowledge.</li>
+                    <li><strong>Community Building:</strong> Fostering collaboration.</li>
+                    <li><strong>Advocacy:</strong> Engaging with policymakers.</li>
+                    <li><strong>Innovation:</strong> Building solutions for local problems.</li>
+                </ul>
+                <p class="text-gray-700 mt-4">
+                    To overcome these challenges and build a robust Web3 ecosystem in Nigeria, several actions are vital. Comprehensive education, like this course, is crucial to raise awareness and digital literacy. Fostering strong local communities encourages collaboration and knowledge sharing among enthusiasts and developers. Engaging constructively with policymakers can help shape clearer and more supportive regulations. Most importantly, continued innovation that addresses local challenges and creates real-world utility will drive sustainable growth and adoption.
+                </p>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 30: Case Studies / Local Examples (Optional)</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">Nigerian Web3 Success Stories (Brief)</h4>
+                <p class="text-gray-700">
+                    (Here, you would insert brief examples of successful Nigerian Web3 projects, notable Nigerian Web3 developers, or thriving local Web3 communities. For instance, you could mention: "<strong>Web3Bridge:</strong> A leading initiative training blockchain developers in Nigeria," or "<strong>Nestcoin:</strong> A Nigerian Web3 company building products for the continent," or "<strong>Local DeFi projects:</strong> [Name a project] focusing on micro-lending or asset tokenization.")
+                </p>
+            </div>
+        </section>
+
+        <!-- Module 5: The Future of Web3 & Next Steps -->
+        <section id="module5" class="mb-12">
+            <h2 class="module-title">Module 5: The Future of Web3 & Next Steps</h2>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 32: Emerging Trends in Web3</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">Beyond the Horizon: New Frontiers</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Metaverse, Web3 Gaming (GameFi), Decentralized Social Media, Soulbound Tokens, Decentralized Science (DeSci).</li>
+                    <li>Web3 is constantly evolving.</li>
+                </ul>
+                <p class="text-gray-700 mt-4">
+                    Web3 is a rapidly evolving space, and new trends are constantly emerging. The **Metaverse** envisions interconnected virtual worlds where users can interact, own assets, and create experiences. **Web3 Gaming (GameFi)** combines gaming with decentralized finance, allowing players to earn real value. **Decentralized Social Media** aims to give users control over their content and data, free from platform censorship. **Soulbound Tokens (SBTs)** are non-transferable NFTs representing identity, credentials, or achievements. **Decentralized Science (DeSci)** seeks to decentralize scientific research and funding. Staying updated on these trends is crucial for anyone in the Web3 space.
+                </p>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 33: Potential Impact on Industries</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">Web3's Transformative Power</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li><strong>Finance:</strong> More accessible, cheaper transactions.</li>
+                    <li><strong>Art & Entertainment:</strong> Creator economy, new monetization.</li>
+                    <li><strong>Supply Chain:</strong> Transparency and traceability.</li>
+                    <li><strong>Healthcare:</strong> Secure data management.</li>
+                </ul>
+                <p class="text-gray-700 mt-4">
+                    Web3's impact extends far beyond finance and digital collectibles. In **Finance**, it promises more accessible, cheaper, and faster transactions globally. For **Art & Entertainment**, it's empowering creators with new monetization models and direct fan engagement. In **Supply Chain**, blockchain offers unprecedented transparency and traceability for goods. Even **Healthcare** can benefit from secure, patient-controlled data management. Web3 is poised to disrupt and innovate across virtually every industry by introducing decentralization, transparency, and user ownership.
+                </p>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 34: Becoming a Part of Web3</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">Your Role in the Decentralized Future</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li><strong>Continue Learning:</strong> Stay updated.</li>
+                    <li><strong>Explore dApps:</strong> Experience the ecosystem.</li>
+                    <li><strong>Join Communities:</strong> Engage with others.</li>
+                    <li><strong>Build (if inclined):</strong> Start coding or contributing.</li>
+                    <li><strong>Educate Others:</strong> Share your knowledge.</li>
+                </ul>
+                <p class="text-gray-700 mt-4">
+                    Now that you have a foundational understanding, how can you participate in Web3? The journey is continuous: always **continue learning** as the space evolves. **Explore dApps** to experience the decentralized internet firsthand. **Join communities** on platforms like Discord or Telegram to connect with like-minded individuals. If you're technically inclined, **start building** by learning a blockchain programming language like Solidity. Most importantly, **educate others** and share your newfound knowledge to help grow the Web3 community responsibly.
+                </p>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 35: Resources for Continued Learning</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">Where to Learn More</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Online Courses (e.g., Coursera, Udemy, your own platform!)</li>
+                    <li>Web3 Blogs & News (e.g., CoinDesk, Decrypt, local Web3 blogs)</li>
+                    <li>Developer Documentation (e.g., Ethereum.org, Solidity Docs)</li>
+                    <li>Local Web3 Meetups/Communities in Nigeria.</li>
+                </ul>
+                <p class="text-gray-700 mt-4">
+                    The Web3 ecosystem offers a wealth of resources for continued learning. Beyond structured online courses, keep up-to-date by following reputable Web3 blogs and news outlets. If you're interested in development, dive into official developer documentation for various blockchains. Don't forget the power of community: seek out local Web3 meetups and online groups in Nigeria to connect with peers and mentors.
+                </p>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 36: Thank You & Contact Information</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">Thank You! Questions?</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Your Name: [Your Name]</li>
+                    <li>Email: [Your Email]</li>
+                    <li>Social Media: [Your Social Media Handles]</li>
+                </ul>
+                <p class="text-gray-700 mt-4">
+                    Thank you for joining this Web3 course! I hope this introduction has provided you with a solid foundation. The world of Web3 is vast and constantly evolving, so I encourage you to continue exploring. Please feel free to reach out with any questions or to connect on social media. Your journey into decentralized innovation has just begun!
+                </p>
+            </div>
+        </section>
+
+        <footer class="text-center text-gray-600 text-sm mt-10 p-4 border-t border-gray-300">
+            &copy; 2025 National Association of Physics Student and Mavis Community. All rights reserved.
+        </footer>
+    </main>
+
+    <script>
+        // JavaScript for active navigation link highlighting
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('#nav-list a');
+
+        function highlightNavLink() {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100; // Offset for better highlighting
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.href.includes(current)) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        // Add event listeners for scroll and initial load
+        window.addEventListener('scroll', highlightNavLink);
+        window.addEventListener('load', highlightNavLink);
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

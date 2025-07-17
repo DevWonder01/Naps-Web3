@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web3 Course: The Internet's Next Evolution</title>
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font for better aesthetics */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light blue-gray background */
+            color: #1a202c; /* Dark text for readability */
+        }
+        /* Smooth scroll for navigation */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Styling for the content cards */
+        .content-card {
+            background-color: #ffffff;
+            border-radius: 1rem; /* Rounded corners */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            transition: transform 0.2s ease-in-out;
+        }
+        .content-card:hover {
+            transform: translateY(-5px); /* Slight lift on hover */
+        }
+        /* Specific styling for module titles */
+        .module-title {
+            background-color: #4a5568; /* Darker gray for module headers */
+            color: #ffffff;
+            padding: 1rem 1.5rem;
+            border-radius: 1rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            font-size: 1.75rem; /* text-3xl */
+            font-weight: 700; /* font-bold */
+        }
+        /* Styling for navigation links */
+        .nav-link {
+            padding: 0.75rem 1rem;
+            border-radius: 0.75rem;
+            margin-bottom: 0.5rem;
+            display: block;
+            text-align: left;
+            font-weight: 500;
+            color: #4a5568;
+            transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+        }
+        .nav-link:hover {
+            background-color: #e2e8f0;
+            color: #2d3748;
+        }
+        .nav-link.active {
+            background-color: #3182ce; /* Blue for active link */
+            color: #ffffff;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="flex flex-col md:flex-row min-h-screen">
+
+    <!-- Navigation Sidebar -->
+    <nav class="w-full md:w-64 bg-gray-800 text-white p-6 md:p-4 shadow-lg md:sticky md:top-0 md:h-screen overflow-y-auto">
+        <div class="text-2xl font-bold mb-6 text-center text-blue-300">Web3 Course</div>
+        <ul id="nav-list">
+            <li><a href="#module1" class="nav-link">Module 1: Intro & Blockchain</a></li>
+            <li><a href="#module2" class="nav-link">Module 2: Ethereum & Smart Contracts</a></li>
+            <li><a href="#module3" class="nav-link">Module 3: dApps & Core Concepts</a></li>
+            <li><a href="#module4" class="nav-link">Module 4: Web3 in Nigeria</a></li>
+            <li><a href="#module5" class="nav-link">Module 5: Future & Next Steps</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="flex-1 p-6 md:p-10">
+        <header class="text-center mb-10">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-4">Web3: The Internet's Next Evolution</h1>
+            <p class="text-xl md:text-2xl text-gray-700">Your Gateway to Decentralized Innovation</p>
+            <p class="text-md text-gray-600 mt-2">Presented by [Your Name/Organization Name]</p>
+        </header>
+
+        <!-- Module 1: Introduction to Web3 & Blockchain Fundamentals -->
+        <section id="module1" class="mb-12">
+            <h2 class="module-title">Module 1: Introduction to Web3 & Blockchain Fundamentals</h2>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 2: What is Web3?</h3>
+                <p class="text-gray-800 mb-2"><strong>Keywords:</strong> Decentralized, User-Owned, Trustless, Open.</p>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Evolution: Web1 (Read-Only) → Web2 (Read-Write) → Web3 (Read-Write-Own)</li>
+                    <li>Powered by Blockchain Technology</li>
+                </ul>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 3: Why Web3 Matters</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">Why We Need Web3</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li><strong>Control:</strong> Own your data, not platforms.</li>
+                    <li><strong>Transparency:</strong> Open and verifiable systems.</li>
+                    <li><strong>Censorship Resistance:</strong> No single point of control.</li>
+                    <li><strong>Innovation:</strong> New possibilities for applications.</li>
+                </ul>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 4: Introducing Blockchain</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">Blockchain: The Foundation of Web3</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>A Distributed Ledger Technology (DLT)</li>
+                    <li>Network of computers (nodes) share and verify data.</li>
+                    <li>Data is stored in "blocks" linked securely.</li>
+                </ul>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 5: How Blockchain Works (Simplified)</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">Blockchain in Action: Blocks & Chains</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Transactions are grouped into "blocks."</li>
+                    <li>Each block is cryptographically linked to the previous.</li>
+                    <li>Creates an immutable, tamper-proof record.</li>
+                </ul>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 6: Decentralization Defined</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">Decentralization: The Core Principle</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>No central authority controls the network.</li>
+                    <li>Information is distributed across many participants.</li>
+                    <li>Increases security and resilience.</li>
+                </ul>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 7: Consensus Mechanisms (Brief Intro)</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">Agreeing on Truth: Consensus</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>How network participants agree on new transactions.</li>
+                    <li><strong>Proof of Work (PoW):</strong> (e.g., Bitcoin) - "Mining"</li>
+                    <li><strong>Proof of Stake (PoS):</strong> (e.g., Ethereum 2.0) - "Staking"</li>
+                </ul>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 8: Cryptography & Security</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">Secure by Design: Cryptography</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Public & Private Keys: Digital identity.</li>
+                    <li>Hashing: Unique digital fingerprint for data.</li>
+                    <li>Ensures integrity and authenticity.</li>
+                </ul>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 9: Recap: Blockchain Fundamentals</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">Key Takeaways: Blockchain</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Decentralization, Immutability, Transparency, Cryptography, Consensus.</li>
+                    <li><strong>Question for Audience:</strong> "What's one new thing you learned about blockchain?"</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Module 2: The Ethereum Ecosystem & Smart Contracts -->
+        <section id="module2" class="mb-12">
+            <h2 class="module-title">Module 2: The Ethereum Ecosystem & Smart Contracts</h2>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 11: Why Ethereum?</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">Beyond Bitcoin: The Rise of Ethereum</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Bitcoin: Digital gold, store of value.</li>
+                    <li>Ethereum: Programmable blockchain.</li>
+                    <li>Enables "Smart Contracts."</li>
+                </ul>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 12: What are Smart Contracts?</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">Smart Contracts: Code that Self-Executes</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Agreements written in code, stored on blockchain.</li>
+                    <li>Automatically execute when conditions are met.</li>
+                    <li>No intermediaries needed; trustless.</li>
+                </ul>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 13: Smart Contract Use Cases</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">Smart Contracts: Real-World Applications</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Automated Escrow</li>
+                    <li>Supply Chain Tracking</li>
+                    <li>Digital Voting Systems</li>
+                    <li>Decentralized Finance (DeFi)</li>
+                </ul>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 14: The Ethereum Virtual Machine (EVM)</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">EVM: Ethereum's Engine</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>A decentralized computer that runs smart contracts.</li>
+                    <li>Ensures contracts run identically for everyone.</li>
+                    <li>Every node on the network runs an EVM.</li>
+                </ul>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 15: Gas & Transactions on Ethereum</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">Gas: Fueling Ethereum Transactions</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>"Gas" is the fee for computation/storage on Ethereum.</li>
+                    <li>Paid in Ether (ETH), Ethereum's native cryptocurrency.</li>
+                    <li>Ensures network security and prevents spam.</li>
+                </ul>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 16: Your Ethereum Wallet</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">Your Gateway to Web3: Crypto Wallets</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Software or hardware to store your crypto assets.</li>
+                    <li><strong>Public Key:</strong> Your address (like an email).</li>
+                    <li><strong>Private Key:</strong> Your secret (like a password).</li>
+                    <li><strong>Seed Phrase:</strong> Backup to recover your wallet.</li>
+                </ul>
+                <p class="text-red-600 font-bold mt-2">Warning: NEVER share your private key/seed phrase!</p>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 17: Recap & Q&A - Module 2</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">Key Takeaways: Module 2</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Ethereum as a platform, Smart Contract power, Wallet basics.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Module 3: Decentralized Applications (dApps) & Core Concepts -->
+        <section id="module3" class="mb-12">
+            <h2 class="module-title">Module 3: Decentralized Applications (dApps) & Core Concepts</h2>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 19: What are dApps?</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">dApps: Decentralized Apps</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Applications built on blockchain technology (e.g., Ethereum).</li>
+                    <li>Backend (smart contracts) runs on a decentralized network.</li>
+                    <li>No single entity controls the application.</li>
+                </ul>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 20: Decentralized Autonomous Organizations (DAOs)</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">DAOs: Community-Governed Organizations</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Organizations run by code and community vote.</li>
+                    <li>No central CEO or board.</li>
+                    <li>Decisions made collectively by token holders.</li>
+                </ul>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 21: Non-Fungible Tokens (NFTs)</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">NFTs: Unique Digital Ownership</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Unique digital assets (art, music, collectibles).</li>
+                    <li>Ownership recorded on a blockchain.</li>
+                    <li>Not interchangeable (unlike cryptocurrency).</li>
+                </ul>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 22: Decentralized Finance (DeFi)</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">DeFi: Open & Accessible Finance</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Financial services built on blockchain (lending, borrowing, trading).</li>
+                    <li>No banks or traditional institutions needed.</li>
+                    <li>Permissionless and transparent.</li>
+                </ul>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 23: Interacting with the Web3 Ecosystem</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">Navigating the Decentralized Web</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Using your crypto wallet (e.g., MetaMask) to connect.</li>
+                    <li>Approving transactions and signing messages.</li>
+                    <li>Exploring dApp interfaces.</li>
+                </ul>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 24: Recap & Q&A - Module 3</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">Key Takeaways: Module 3</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>dApps, DAOs, NFTs, DeFi, Wallet interaction.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Module 4: Web3 in Nigeria: Opportunities & Challenges -->
+        <section id="module4" class="mb-12">
+            <h2 class="module-title">Module 4: Web3 in Nigeria: Opportunities & Challenges</h2>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 26: Nigeria's Web3 Leadership</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">A Global Leader in Web3 Adoption</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>High crypto adoption rates (e.g., Chainalysis rankings).</li>
+                    <li>Young, tech-savvy population.</li>
+                    <li>Driving innovation in the African Web3 space.</li>
+                    <li><strong>Data Point (if available):</strong> "Nigeria ranks X globally in crypto adoption."</li>
+                </ul>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 27: Opportunities for Nigerians in Web3</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">Unlocking Potential: Opportunities</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li><strong>Remittances:</strong> Faster, cheaper cross-border payments.</li>
+                    <li><strong>Financial Inclusion:</strong> Access to services for the unbanked.</li>
+                    <li><strong>Job Creation:</strong> Developer roles, community managers, content creators.</li>
+                    <li><strong>Entrepreneurship:</strong> Building local dApps, Web3 startups.</li>
+                    <li><strong>Digital Ownership:</strong> Monetizing content, gaming assets.</li>
+                </ul>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 28: Challenges & Considerations in Nigeria</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">Navigating the Landscape: Challenges</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li><strong>Regulatory Uncertainty:</strong> Evolving government stance.</li>
+                    <li><strong>Digital Literacy:</strong> Bridging the knowledge gap.</li>
+                    <li><strong>Infrastructure:</strong> Internet access, power stability.</li>
+                    <li><strong>Scams & Misinformation:</strong> Protecting users.</li>
+                    <li><strong>Funding for Startups:</strong> Access to capital.</li>
+                </ul>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 29: Addressing Challenges & Moving Forward</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">Towards a Robust Web3 Ecosystem</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li><strong>Education:</strong> Your role in building knowledge.</li>
+                    <li><strong>Community Building:</strong> Fostering collaboration.</li>
+                    <li><strong>Advocacy:</strong> Engaging with policymakers.</li>
+                    <li><strong>Innovation:</strong> Building solutions for local problems.</li>
+                </ul>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 30: Case Studies / Local Examples (Optional)</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">Nigerian Web3 Success Stories (Brief)</h4>
+                <p class="text-gray-700">Mention a local Web3 project, a successful Nigerian Web3 developer, or a community.</p>
+            </div>
+        </section>
+
+        <!-- Module 5: The Future of Web3 & Next Steps -->
+        <section id="module5" class="mb-12">
+            <h2 class="module-title">Module 5: The Future of Web3 & Next Steps</h2>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 32: Emerging Trends in Web3</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">Beyond the Horizon: New Frontiers</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Metaverse, Web3 Gaming (GameFi), Decentralized Social Media, Soulbound Tokens, Decentralized Science (DeSci).</li>
+                    <li>Web3 is constantly evolving.</li>
+                </ul>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 33: Potential Impact on Industries</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">Web3's Transformative Power</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li><strong>Finance:</strong> More accessible, cheaper transactions.</li>
+                    <li><strong>Art & Entertainment:</strong> Creator economy, new monetization.</li>
+                    <li><strong>Supply Chain:</strong> Transparency and traceability.</li>
+                    <li><strong>Healthcare:</strong> Secure data management.</li>
+                </ul>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 34: Becoming a Part of Web3</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">Your Role in the Decentralized Future</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li><strong>Continue Learning:</strong> Stay updated.</li>
+                    <li><strong>Explore dApps:</strong> Experience the ecosystem.</li>
+                    <li><strong>Join Communities:</strong> Engage with others.</li>
+                    <li><strong>Build (if inclined):</strong> Start coding or contributing.</li>
+                    <li><strong>Educate Others:</strong> Share your knowledge.</li>
+                </ul>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 35: Resources for Continued Learning</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">Where to Learn More</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Online Courses (e.g., Coursera, Udemy, your own platform!)</li>
+                    <li>Web3 Blogs & News (e.g., CoinDesk, Decrypt, local Web3 blogs)</li>
+                    <li>Developer Documentation (e.g., Ethereum.org, Solidity Docs)</li>
+                    <li>Local Web3 Meetups/Communities in Nigeria.</li>
+                </ul>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Slide 36: Thank You & Contact Information</h3>
+                <h4 class="text-xl font-medium text-gray-800 mb-2">Thank You! Questions?</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Your Name: [Your Name]</li>
+                    <li>Email: [Your Email]</li>
+                    <li>Social Media: [Your Social Media Handles]</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class="text-center text-gray-600 text-sm mt-10 p-4 border-t border-gray-300">
+            &copy; 2025 National Association of Physics Student and Mavis Community. All rights reserved.
+        </footer>
+    </main>
+
+    <script>
+        // JavaScript for active navigation link highlighting
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('#nav-list a');
+
+        function highlightNavLink() {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100; // Offset for better highlighting
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.href.includes(current)) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        // Add event listeners for scroll and initial load
+        window.addEventListener('scroll', highlightNavLink);
+        window.addEventListener('load', highlightNavLink);
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
