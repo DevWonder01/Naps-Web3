@@ -5,7 +5,9 @@ export type { ERC20 } from "./ERC20";
 export type { IERC20Metadata } from "./IERC20Metadata";
 export type { IERC20 } from "./IERC20";
 export type { Example } from "./Example";
+export type { HelloWorld } from "./HelloWorld";
 export type { SimpleStorage } from "./SimpleStorage";
+export type { SimpleToken } from "./SimpleToken";
 export type { TodoList } from "./TodoList";
 export type { MyToken } from "./MyToken";
 
@@ -13,6 +15,8 @@ export { ERC20__factory } from "./factories/ERC20__factory";
 export { IERC20Metadata__factory } from "./factories/IERC20Metadata__factory";
 export { IERC20__factory } from "./factories/IERC20__factory";
 export { Example__factory } from "./factories/Example__factory";
+export { HelloWorld__factory } from "./factories/HelloWorld__factory";
 export { SimpleStorage__factory } from "./factories/SimpleStorage__factory";
+export { SimpleToken__factory } from "./factories/SimpleToken__factory";
 export { TodoList__factory } from "./factories/TodoList__factory";
 export { MyToken__factory } from "./factories/MyToken__factory";

@@ -22,17 +22,20 @@ import { FunctionFragment, EventFragment, Result } from "@ethersproject/abi";
 interface ExampleInterface extends ethers.utils.Interface {
   functions: {
     "age()": FunctionFragment;
-    "career()": FunctionFragment;
-    "name()": FunctionFragment;
+    "sumOf2Numbers(int256,int256)": FunctionFragment;
   };
 
   encodeFunctionData(functionFragment: "age", values?: undefined): string;
-  encodeFunctionData(functionFragment: "career", values?: undefined): string;
-  encodeFunctionData(functionFragment: "name", values?: undefined): string;
+  encodeFunctionData(
+    functionFragment: "sumOf2Numbers",
+    values: [BigNumberish, BigNumberish]
+  ): string;
 
   decodeFunctionResult(functionFragment: "age", data: BytesLike): Result;
-  decodeFunctionResult(functionFragment: "career", data: BytesLike): Result;
-  decodeFunctionResult(functionFragment: "name", data: BytesLike): Result;
+  decodeFunctionResult(
+    functionFragment: "sumOf2Numbers",
+    data: BytesLike
+  ): Result;
 
   events: {};
 }
@@ -55,39 +58,51 @@ export class Example extends Contract {
 
     "age()"(overrides?: CallOverrides): Promise<[BigNumber]>;
 
-    career(overrides?: CallOverrides): Promise<[string]>;
+    sumOf2Numbers(
+      a: BigNumberish,
+      b: BigNumberish,
+      overrides?: CallOverrides
+    ): Promise<[BigNumber]>;
 
-    "career()"(overrides?: CallOverrides): Promise<[string]>;
-
-    name(overrides?: CallOverrides): Promise<[string]>;
-
-    "name()"(overrides?: CallOverrides): Promise<[string]>;
+    "sumOf2Numbers(int256,int256)"(
+      a: BigNumberish,
+      b: BigNumberish,
+      overrides?: CallOverrides
+    ): Promise<[BigNumber]>;
   };
 
   age(overrides?: CallOverrides): Promise<BigNumber>;
 
   "age()"(overrides?: CallOverrides): Promise<BigNumber>;
 
-  career(overrides?: CallOverrides): Promise<string>;
+  sumOf2Numbers(
+    a: BigNumberish,
+    b: BigNumberish,
+    overrides?: CallOverrides
+  ): Promise<BigNumber>;
 
-  "career()"(overrides?: CallOverrides): Promise<string>;
-
-  name(overrides?: CallOverrides): Promise<string>;
-
-  "name()"(overrides?: CallOverrides): Promise<string>;
+  "sumOf2Numbers(int256,int256)"(
+    a: BigNumberish,
+    b: BigNumberish,
+    overrides?: CallOverrides
+  ): Promise<BigNumber>;
 
   callStatic: {
     age(overrides?: CallOverrides): Promise<BigNumber>;
 
     "age()"(overrides?: CallOverrides): Promise<BigNumber>;
 
-    career(overrides?: CallOverrides): Promise<string>;
+    sumOf2Numbers(
+      a: BigNumberish,
+      b: BigNumberish,
+      overrides?: CallOverrides
+    ): Promise<BigNumber>;
 
-    "career()"(overrides?: CallOverrides): Promise<string>;
-
-    name(overrides?: CallOverrides): Promise<string>;
-
-    "name()"(overrides?: CallOverrides): Promise<string>;
+    "sumOf2Numbers(int256,int256)"(
+      a: BigNumberish,
+      b: BigNumberish,
+      overrides?: CallOverrides
+    ): Promise<BigNumber>;
   };
 
   filters: {};
@@ -97,13 +112,17 @@ export class Example extends Contract {
 
     "age()"(overrides?: CallOverrides): Promise<BigNumber>;
 
-    career(overrides?: CallOverrides): Promise<BigNumber>;
+    sumOf2Numbers(
+      a: BigNumberish,
+      b: BigNumberish,
+      overrides?: CallOverrides
+    ): Promise<BigNumber>;
 
-    "career()"(overrides?: CallOverrides): Promise<BigNumber>;
-
-    name(overrides?: CallOverrides): Promise<BigNumber>;
-
-    "name()"(overrides?: CallOverrides): Promise<BigNumber>;
+    "sumOf2Numbers(int256,int256)"(
+      a: BigNumberish,
+      b: BigNumberish,
+      overrides?: CallOverrides
+    ): Promise<BigNumber>;
   };
 
   populateTransaction: {
@@ -111,12 +130,16 @@ export class Example extends Contract {
 
     "age()"(overrides?: CallOverrides): Promise<PopulatedTransaction>;
 
-    career(overrides?: CallOverrides): Promise<PopulatedTransaction>;
+    sumOf2Numbers(
+      a: BigNumberish,
+      b: BigNumberish,
+      overrides?: CallOverrides
+    ): Promise<PopulatedTransaction>;
 
-    "career()"(overrides?: CallOverrides): Promise<PopulatedTransaction>;
-
-    name(overrides?: CallOverrides): Promise<PopulatedTransaction>;
-
-    "name()"(overrides?: CallOverrides): Promise<PopulatedTransaction>;
+    "sumOf2Numbers(int256,int256)"(
+      a: BigNumberish,
+      b: BigNumberish,
+      overrides?: CallOverrides
+    ): Promise<PopulatedTransaction>;
   };
 }
