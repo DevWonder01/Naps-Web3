@@ -23,6 +23,7 @@ import { removeConsoleLog } from "hardhat-preprocessor"
 
 const accounts = {
   mnemonic: process.env.MNEMONIC || "test test test test test test test test test test test junk",
+  // accountsBalance: "990000000000000000000",
 }
 
 
@@ -39,16 +40,16 @@ const config: HardhatUserConfig = {
   },
   solidity: {
     compilers: [
-      // {
-      //   version: "0.8.13",
-      //   settings: { 
-      //     viaIR: true,
-      //     optimizer: {
-      //       enabled: true,
-      //       runs: 200,
-      //     },
-      //   },
-      // },
+      {
+        version: "0.8.20",
+        settings: { 
+          viaIR: true,
+          optimizer: {
+            enabled: true,
+            runs: 200,
+          },
+        },
+      },
       {
         version: "0.8.12",
         settings: {
@@ -183,12 +184,7 @@ const config: HardhatUserConfig = {
   etherscan: {
     apiKey: "",
   },
-  gasReporter: {
-    coinmarketcap: process.env.COINMARKETCAP_API_KEY,
-    currency: "USD",
-    enabled: process.env.REPORT_GAS === "true",
-    excludeContracts: ["contracts/mocks/", "contracts/libraries/"],
-  },
+
   mocha: {
     timeout: 20000,
   },
@@ -239,10 +235,7 @@ const config: HardhatUserConfig = {
     overwrite: false,
     runOnCompile: true,
   },
-  tenderly: {
-    project: process.env.TENDERLY_PROJECT!,
-    username: process.env.TENDERLY_USERNAME!,
-  },
+
   typechain: {
     outDir: "types",
     target: "ethers-v5",
