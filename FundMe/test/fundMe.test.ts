@@ -2,7 +2,7 @@
 import { expect } from "chai";
 import { ethers } from "hardhat";
 import { SignerWithAddress } from "@nomiclabs/hardhat-ethers/signers";
-import { FundMe } from "../typechain-types"; // Typechain generated types for your contract
+import { FundMe } from "../types/FundMe"; // Typechain generated types for your contract
 
 describe("FundMe", function () {
     let fundMe: FundMe; // Declare contract instance
