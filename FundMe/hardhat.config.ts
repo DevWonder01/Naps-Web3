@@ -210,6 +210,16 @@ const config: HardhatUserConfig = {
       gasPrice: 120 * 1000000000,
       chainId: 1,
     },
+
+     "sonic-testnet": {
+      url : "https://rpc.blaze.soniclabs.com",
+      accounts : [accountKey[0]],
+      gasPrice: 120 * 1000000000,
+      chainId: 57054,
+
+    },
+
+
     localhost: {
     
     },
