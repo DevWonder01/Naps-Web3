@@ -11,13 +11,14 @@ contract FundMe {
     // --- State Variables ---
     address public immutable i_owner; // The address of the project creator (immutable for security)
     uint256 public s_goalAmount; // The target amount in Wei (1 Ether = 10^18 Wei)
-    uint256 public s_deadline; // Timestamp when the funding period ends
+    uint256 public s_deadline; // Timestamp when the funding period ends 
     uint256 public s_totalFundsRaised; // Accumulates all donated funds
     bool public s_goalReached; // True if the goal was met
     bool public s_fundsClaimed; // True if the owner has claimed the funds
 
     // Mapping to store how much each address has contributed
     mapping(address => uint256) public s_donations;
+
 
     // --- Events ---
     // Events are crucial for frontend applications to listen for changes on-chain
@@ -47,9 +48,10 @@ contract FundMe {
     // --- Constructor ---
     // This function runs only once when the contract is deployed
     constructor(uint256 _goalAmountInWei, uint256 _fundingDurationInSeconds) {
+        require(block.timestamp >= _fundingDurationInSeconds);
         i_owner = msg.sender; // The deployer of the contract is the owner
         s_goalAmount = _goalAmountInWei;
-        s_deadline = block.timestamp + _fundingDurationInSeconds; // Deadline is current time + duration
+        s_deadline =  _fundingDurationInSeconds; // Deadline is current time + duration
         s_totalFundsRaised = 0;
         s_goalReached = false;
         s_fundsClaimed = false;
