@@ -10,8 +10,8 @@ const deployContracts = async () => {
   const fundMeContract = await ethers.getContractFactory("FundMe");
 
   // base
-  const amountRaise = String(10 * 10 **18);
-    const deadLine = 1757100816
+  const amountRaise = String(1.5 * 10 **18);
+    const deadLine = 1756673493
   fundMe = await fundMeContract.deploy(amountRaise,deadLine);
 
 
